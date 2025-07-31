@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sake Sushi Delivery Xpress</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="img/SAKE SUSHI LOGO.jpg" alt="Logo Sake Sushi" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="#promos">Promos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero"></section>
+
+
+
+  <section class="menu-slider-section">
+    <h3 class="menu-title">Nuestro Menú</h3>
+
+    <div class="slider-container">
+      <button class="slider-btn prev" onclick="slideMenu(-1)">❮</button>
+
+      <div class="slider" id="menuSlider">
+        <div class="menu-card">
+          <img src="img/Menu 4.jpg" alt="Platillo 1">
+          <h4>Roll Especial</h4>
+          <p>Roll de salmón con queso crema y palta.</p>
+          <span class="price">Bs. 35</span>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/Menu 2.jpg" alt="Platillo 2">
+          <h4>Combo Familiar</h4>
+          <p>24 piezas + bebida grande.</p>
+          <span class="price">Bs. 60</span>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/Menu 1.jpg" alt="Platillo 3">
+          <h4>Roll Veggie</h4>
+          <p>Vegetales frescos con toque oriental.</p>
+          <span class="price">Bs. 30</span>
+        </div>
+
+        <!-- Agrega más cards aquí -->
+        <div class="menu-card">
+          <img src="img/Menu 4.jpg" alt="Platillo 1">
+          <h4>Roll Especial</h4>
+          <p>Roll de salmón con queso crema y palta.</p>
+          <span class="price">Bs. 35</span>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/Menu 1.jpg" alt="Platillo 3">
+          <h4>Roll Veggie</h4>
+          <p>Vegetales frescos con toque oriental.</p>
+          <span class="price">Bs. 30</span>
+        </div>
+
+      <button class="slider-btn next" onclick="slideMenu(1)">❯</button>
+    </div>
+  </section>
+
+
+  <section id="especiales" class="especiales">
+    <h3 style="text-align:center; font-size:2rem;">Especiales de Hoy</h3>
+    <p style="text-align:center; max-width:700px; margin:0 auto 2rem;">
+      Descubre nuestras selecciones más sabrosas y populares del día. ¡Imperdibles!
+    </p>
+
+    <div class="especiales-carousel">
+      <div class="especial-card" data-aos="fade-up">
+        <img src="img/Menu 4.jpg" alt="Especial 1">
+      </div>
+      <div class="especial-card" data-aos="fade-up">
+        <img src="img/Menu 2.jpg" alt="Especial 2">
+      </div>
+      <div class="especial-card" data-aos="fade-up">
+        <img src="img/Menu 3.jpg" alt="Especial 3">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="menu" class="menu">
+    <div class="items">
+      <div class="card">
+        <img src="img/Menu 3.jpg" alt="Roll Clásico">
+        <div class="card-content">
+          <h4>Roll Clásico</h4>
+          <p>Delicioso roll de salmón con palta y queso crema.</p>
+          <button>Agregar</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Menu 4.jpg" alt="Combo Xpress">
+        <div class="card-content">
+          <h4>Combo Xpress</h4>
+          <p>12 piezas mixtas con bebida incluida. ¡Promo del día!</p>
+          <button>Agregar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:2rem; text-align:center;" data-aos="fade-up">
+    <h3>¿Tienes dudas o pedidos especiales?</h3>
+    <p>Escríbenos directamente por WhatsApp o deja tu correo:</p>
+    <input type="email" placeholder="Tu correo"
+      style="padding:0.5rem; width:250px; margin-top:1rem; border-radius:0.3rem;">
+    <br><button
+      style="margin-top:1rem; padding:0.6rem 1.2rem; background:#E53935; color:white; border:none; border-radius:0.3rem;">Enviar</button>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Sake Sushi Delivery Xpress</p>
+    <p id="contacto">Contacto: +591 70000000 | Santa Cruz, Bolivia</p>
+  </footer>
+
+  <a href="https://wa.me/59170000000" class="whatsapp-btn" title="Pedir por WhatsApp">
+    💬
+  </a>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
